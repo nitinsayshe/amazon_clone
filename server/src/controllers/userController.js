@@ -77,8 +77,8 @@ exports.userLogin = async function (req, res) {
         //     }
         //     return res.status(400).send({ status: false, message: "Invalid credentials" })
         // });
-
-        return res.status(200).send({ status: true, message: 'user login successfully', data: userdata })
+        console.log(userdata)
+        return res.status(200).send(userdata )
 
     // } catch (err) {
     //     return res.status(500).send({ status: false, message: err.message })
